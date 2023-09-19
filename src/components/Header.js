@@ -22,6 +22,31 @@ function Header() {
               Realmusic
             </h1>
           </div>
+          <div className="hidden lg:flex">
+            <ul className="flex space-x-4 text-white">
+              <li>
+                <a href="#" className="block p-4">Music</a>
+              </li>
+              <li>
+                <a href="#" className="block p-4">Video</a>
+              </li>
+              <li>
+                <a href="#" className="block p-4">Merch</a>
+              </li>
+              <li>
+                <a href="#" className="block p-4">Tour</a>
+              </li>
+              <li>
+                <a href="#" className="block p-4">FAQs</a>
+              </li>
+              <li>
+                <a href="#" className="block p-4">Account</a>
+              </li>
+              <li>
+                <a href="#" className="block p-4">Cart (0)</a>
+              </li>
+            </ul>
+          </div>
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
@@ -34,9 +59,9 @@ function Header() {
       </div>
       {/* Боковое меню */}
       <div
-        className={`fixed inset-y-0 left-0 w-64 bg-[#121212] transform transition-transform ease-in-out duration-300 ${
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:relative lg:static lg:w-auto lg:bg-transparent lg:transition-none`}
+        className={`lg:hidden fixed inset-y-0 right-0 w-64 bg-[#121212] transform transition-transform ease-in-out duration-300 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <ul className="pt-10 ">
           <li>
